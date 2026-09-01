@@ -16,16 +16,16 @@ public class Moto {
     @JoinColumn(name = "vehiculo_id")
     private Vehiculo vehiculo;
 
-    @Column(name = "cantidad_puertas")
-    private int cantidadPuertas;
+    @Column(name = "cilindrada")
+    private int cilindrada;
 
     // constructores
     public Moto() {
     }
 
-    public Moto(Vehiculo vehiculo, int cantidadPuertas) {
+    public Moto(Vehiculo vehiculo, int cilindrada) {
         this.vehiculo = vehiculo;
-        this.cantidadPuertas = cantidadPuertas;
+        this.cilindrada = cilindrada;
     }
 
 // getters y setters
@@ -46,11 +46,11 @@ public class Moto {
         this.vehiculo = vehiculo;
     }
 
-    public int getCantidadPuertas() {
-        return cantidadPuertas;
+    public int getCilindrada() {
+        return cilindrada;
     }
 
-    public void setCantidadPuertas(int cantidadPuertas) {
-        this.cantidadPuertas = cantidadPuertas;
+    public void setCilindrada(int cilindrada) {
+        this.cilindrada = cilindrada;
     }
 }
