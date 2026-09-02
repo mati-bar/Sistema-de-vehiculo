@@ -1,5 +1,6 @@
 package com.example.vehiculo.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import javax.swing.tree.VariableHeightLayoutCache;
@@ -16,7 +17,9 @@ public class Vehiculo {
     private String modelo;
     @ManyToOne
     @JoinColumn (name = "propietario_id")
+    @JsonIgnore
     private Propietario propietario;
+
     public Vehiculo () {
 
     }
